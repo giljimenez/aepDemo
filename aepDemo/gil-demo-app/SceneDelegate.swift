@@ -1,4 +1,5 @@
 import UIKit
+import ACPCore
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -13,6 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
+        ACPCore.lifecycleStart(["state":"appResume"])
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -22,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+        ACPCore.lifecyclePause()
     }
 
 

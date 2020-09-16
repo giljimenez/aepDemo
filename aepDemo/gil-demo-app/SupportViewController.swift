@@ -1,4 +1,5 @@
 import UIKit
+import ACPCore
 
 class SupportViewController: UIViewController {
 
@@ -7,6 +8,7 @@ class SupportViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        ACPCore.trackState("Suppport View", data: nil)
         super.viewWillAppear(animated)
     }
 

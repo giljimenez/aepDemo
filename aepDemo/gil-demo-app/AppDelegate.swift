@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ACPSignal.registerExtension()
         ACPUserProfile.registerExtension()
         ACPCore.start {
-            ACPCore.lifecycleStart(nil)
+            ACPCore.lifecycleStart(["state":"appStart"])
         }
         return true
     }

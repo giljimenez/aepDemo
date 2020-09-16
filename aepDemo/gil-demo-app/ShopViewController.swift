@@ -1,4 +1,5 @@
 import UIKit
+import ACPCore
 
 class ShopViewController: UIViewController {
 
@@ -7,6 +8,7 @@ class ShopViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        ACPCore.trackState("Shop View", data: nil)
         super.viewWillAppear(animated)
     }
     
