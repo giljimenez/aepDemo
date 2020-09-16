@@ -1,0 +1,42 @@
+PODS:
+  - ACPAnalytics (2.3.0):
+    - ACPAnalytics/main (= 2.3.0)
+    - ACPCore (>= 2.5.0)
+  - ACPAnalytics/main (2.3.0):
+    - ACPCore (>= 2.5.0)
+  - ACPCore (2.7.4):
+    - ACPCore/main (= 2.7.4)
+  - ACPCore/main (2.7.4)
+  - ACPTarget (2.1.7):
+    - ACPCore (>= 2.5.0)
+    - ACPTarget/iOS (= 2.1.7)
+  - ACPTarget/iOS (2.1.7):
+    - ACPCore (>= 2.5.0)
+  - ACPUserProfile (2.1.0):
+    - ACPCore (~> 2.0)
+    - ACPUserProfile/iOS (= 2.1.0)
+  - ACPUserProfile/iOS (2.1.0):
+    - ACPCore (~> 2.0)
+
+DEPENDENCIES:
+  - ACPAnalytics (~> 2.0)
+  - ACPCore (~> 2.0)
+  - ACPTarget (~> 2.1)
+  - ACPUserProfile (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - ACPAnalytics
+    - ACPCore
+    - ACPTarget
+    - ACPUserProfile
+
+SPEC CHECKSUMS:
+  ACPAnalytics: 10b531c3c45f665748cf81a9e18f20266097605b
+  ACPCore: 8b9c4f63344c368567c215656d8a89bbd72292ec
+  ACPTarget: 96b2c397dfb8bb58ea85b9d4c6bb0b914f20c1ab
+  ACPUserProfile: 934b0d8136dc8b4c71e95c347ae733c4482d5b9d
+
+PODFILE CHECKSUM: 466e6fe82429dc397c182e13bec54474b13b68a1
+
+COCOAPODS: 1.10.0.beta.2

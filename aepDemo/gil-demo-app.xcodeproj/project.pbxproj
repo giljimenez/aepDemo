@@ -15,9 +15,11 @@
 		2B7AE98A2420643B006F07C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7AE9892420643B006F07C8 /* Assets.xcassets */; };
 		2B7AE98D2420643B006F07C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7AE98B2420643B006F07C8 /* LaunchScreen.storyboard */; };
 		2B7AE9952420649D006F07C8 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7AE9942420649D006F07C8 /* SupportViewController.swift */; };
+		B0988BDD7A0E0CE0FB83339C /* Pods_gil_demo_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407640B783109072A65573C6 /* Pods_gil_demo_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A79C1A39304CC57BBE5E0BF /* Pods-gil-demo-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gil-demo-app.debug.xcconfig"; path = "Target Support Files/Pods-gil-demo-app/Pods-gil-demo-app.debug.xcconfig"; sourceTree = "<group>"; };
 		2B7AE97B2420643A006F07C8 /* gil-demo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gil-demo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7AE97E2420643A006F07C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7AE9802420643A006F07C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		2B7AE98C2420643B006F07C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7AE98E2420643B006F07C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B7AE9942420649D006F07C8 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		407640B783109072A65573C6 /* Pods_gil_demo_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gil_demo_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7782BC2F68A253DF833FBB5B /* Pods-gil-demo-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gil-demo-app.release.xcconfig"; path = "Target Support Files/Pods-gil-demo-app/Pods-gil-demo-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0988BDD7A0E0CE0FB83339C /* Pods_gil_demo_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				2B7AE97D2420643A006F07C8 /* gil-demo-app */,
 				2B7AE97C2420643A006F07C8 /* Products */,
+				FA042C29886A609D9FE52632 /* Pods */,
+				3D93B697DD2359DF78647367 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = "gil-demo-app";
 			sourceTree = "<group>";
 		};
+		3D93B697DD2359DF78647367 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				407640B783109072A65573C6 /* Pods_gil_demo_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA042C29886A609D9FE52632 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A79C1A39304CC57BBE5E0BF /* Pods-gil-demo-app.debug.xcconfig */,
+				7782BC2F68A253DF833FBB5B /* Pods-gil-demo-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B7AE9912420643B006F07C8 /* Build configuration list for PBXNativeTarget "gil-demo-app" */;
 			buildPhases = (
+				D0A34D3B1016768BF22C109C /* [CP] Check Pods Manifest.lock */,
 				2B7AE9772420643A006F07C8 /* Sources */,
 				2B7AE9782420643A006F07C8 /* Frameworks */,
 				2B7AE9792420643A006F07C8 /* Resources */,
@@ -138,6 +164,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0A34D3B1016768BF22C109C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gil-demo-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B7AE9772420643A006F07C8 /* Sources */ = {
@@ -290,6 +341,7 @@
 		};
 		2B7AE9922420643B006F07C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A79C1A39304CC57BBE5E0BF /* Pods-gil-demo-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +361,7 @@
 		};
 		2B7AE9932420643B006F07C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7782BC2F68A253DF833FBB5B /* Pods-gil-demo-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
