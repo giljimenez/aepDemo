@@ -2,6 +2,7 @@ import UIKit
 import ACPCore
 import ACPAnalytics
 import ACPUserProfile
+import AdSupport
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ACPCore.start {
             ACPCore.lifecycleStart(["state":"appStart"])
         }
+        ACPCore.setAdvertisingIdentifier( ASIdentifierManager.shared().advertisingIdentifier.uuidString )
+        
         return true
     }
 
