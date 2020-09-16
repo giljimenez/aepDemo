@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ACPCore.lifecycleStart(["state":"appStart"])
         }
         ACPCore.setAdvertisingIdentifier( ASIdentifierManager.shared().advertisingIdentifier.uuidString )
-        
+        ACPIdentity.syncIdentifier("x_device_id", identifier: "gil", authentication: ACPMobileVisitorAuthenticationState.authenticated)
         return true
     }
 
